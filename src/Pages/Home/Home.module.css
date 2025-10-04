@@ -1,0 +1,244 @@
+.home {
+    background-color: var(--light-main-bg);
+    width: 100vw;
+    height: 92vh;
+    display: flex;
+    align-items: center;
+    z-index: -1;
+    font-family: var(--font-text);
+}
+
+.home .left,
+.home .right {
+    height: 100%;
+    display: flex;
+}
+
+.home .left {
+    width: 40vw;
+    align-items: end;
+}
+
+.home .left>img {
+    width: 100%;
+}
+
+.home .right {
+    width: 60vw;
+    align-items: center;
+}
+
+.home .right .strong_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+    height: fit-content;
+    padding: var(--pad-y) clamp(.8rem, 5vw, 1.5rem);
+    background-color: rgba(233, 231, 231, 0.211);
+    box-shadow: var(--light-box-shadow);
+    gap: 1rem;
+    border-radius: 1rem;
+    position: relative;
+}
+
+.home .right .strong_wrapper>h1 {
+    font-size: var(--size-extra-large);
+    font-family: var(--font-title);
+    color: var(--light-text-color);
+    text-indent: 1rem;
+}
+
+.home .right .strong_wrapper>p {
+    font-size: var(--size-large);
+    margin: auto;
+    width: 90%;
+}
+
+.home .right .strong_wrapper #read_button {
+    font-family: var(--font-text);
+    padding: var(--pad-y) var(--pad-x);
+    background-color: var(--light-text-color);
+    color: white;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    width: fit-content;
+    box-shadow: var(--light-box-shadow);
+}
+
+.home .right .strong_wrapper #read_button:hover {
+    background-color: var(--light-highlighter);
+}
+
+.home .right .strong_wrapper #img_1 {
+    width: 30px;
+    position: absolute;
+    top: -10%;
+    left: -5%;
+    cursor: crosshair;
+}
+
+.home .right .strong_wrapper #img_1:not(:hover) {
+    transform: rotate(0deg);
+}
+
+.home .right .strong_wrapper #img_1:hover {
+    animation: moveToleft .4s ease forwards;
+}
+
+.home .right .strong_wrapper #img_2 {
+    width: 50px;
+    position: absolute;
+    top: -5%;
+    left: 0%;
+    cursor: crosshair;
+}
+
+.home .right .strong_wrapper #img_2:not(:hover) {
+    transform: rotate(0deg);
+}
+
+.home .right .strong_wrapper #img_2:hover {
+    animation: moveToleft .4s ease forwards;
+}
+
+.home .right .strong_wrapper #img_3 {
+    width: 30px;
+    position: absolute;
+    top: -10%;
+    right: 0%;
+    cursor: crosshair;
+}
+
+.home .right .strong_wrapper #img_3:not(:hover) {
+    transform: rotate(50deg);
+}
+
+.home .right .strong_wrapper #img_3:hover {
+    animation: moveRight .4s ease forwards;
+}
+
+.home .right .strong_wrapper #img_4 {
+    width: 50px;
+    position: absolute;
+    top: -5%;
+    right: -5%;
+    transform: rotate(50deg);
+    cursor: crosshair;
+}
+
+.home .right .strong_wrapper #img_4:not(:hover) {
+    transform: rotate(50deg);
+}
+
+.home .right .strong_wrapper #img_4:hover {
+    animation: moveRight .4s ease forwards;
+}
+
+.home .right .strong_wrapper #img_5 {
+    width: 30px;
+    position: absolute;
+    top: 95%;
+    left: -5%;
+    cursor: crosshair;
+}
+
+.home .right .strong_wrapper #img_5:not(:hover) {
+    transform: rotate(0deg);
+}
+
+.home .right .strong_wrapper #img_5:hover {
+    animation: moveToleft .4s ease forwards;
+}
+
+.home .right .strong_wrapper #img_6 {
+    width: 50px;
+    position: absolute;
+    top: 92%;
+    left: 0%;
+    cursor: crosshair;
+}
+
+.home .right .strong_wrapper #img_6:not(:hover) {
+    transform: rotate(0deg);
+}
+
+.home .right .strong_wrapper #img_6:hover {
+    animation: moveToleft .4s ease forwards;
+}
+
+.home .right .strong_wrapper #img_7 {
+    width: 30px;
+    position: absolute;
+    top: 95%;
+    right: 5%;
+    cursor: crosshair;
+}
+
+.home .right .strong_wrapper #img_7:not(:hover) {
+    transform: rotate(50deg);
+}
+
+.home .right .strong_wrapper #img_7:hover {
+    animation: moveRight .4s ease forwards;
+}
+
+.home .right .strong_wrapper #img_8 {
+    width: 50px;
+    position: absolute;
+    top: 92%;
+    right: -5%;
+    transform: rotate(50deg);
+    cursor: crosshair;
+}
+
+.home .right .strong_wrapper #img_8:not(:hover) {
+    transform: rotate(50deg);
+}
+
+.home .right .strong_wrapper #img_8:hover {
+    animation: moveRight .4s ease forwards;
+}
+
+@keyframes moveRight {
+    to {
+        transform: rotate(-50deg);
+        transform: rotate(-50deg) translateX(-10px);
+    }
+}
+
+@keyframes moveToleft {
+    to {
+        transform: rotate(50deg) translateX(10px);
+    }
+}
+
+
+/* DARK MODE */
+
+.home_dark_mode {
+    background-color: var(--dark-main-bg);
+}
+
+.home_dark_mode .right .strong_wrapper>h1 {
+    color: white;
+}
+
+.home_dark_mode .right .strong_wrapper>p {
+    color: white;
+}
+
+.home_dark_mode .right .strong_wrapper {
+    background-color: var(--dark-highlighter);
+}
+
+.home .right .strong_wrapper #read_button {
+    background-color: var(--light-highlighter);
+    box-shadow: var(--dark-box-shadow);
+    color: white;
+}
+
+.home .right .strong_wrapper #read_button:hover {
+    background-color: var(--light-text-color);
+}

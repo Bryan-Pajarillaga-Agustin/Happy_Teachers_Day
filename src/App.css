@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root {
+    /* light mode */
+    --light-main-bg: white;
+    --light-text-color: #eea228;
+    --light-highlighter: rgb(249, 133, 152);
+    --light-text-shadow: 0 0 10px #0000004d;
+    --light-box-shadow: 0 0px 20px 0px #0000004d;
+    /* dark mode */
+    --dark-main-bg: rgb(35, 47, 55);
+    --dark-text-color: white;
+    --dark-tab-color: rgb(233, 228, 228);
+    --dark-highlighter: #eea228;
+    --dark-text-shadow: 0 0 10px #fffffff5;
+    --dark-box-shadow: 0px 2px 3px 0px rgb(246, 246, 246);
+    --font-title: "Dancing Script", sans-serif;
+    --font-text: "Inter", sans-serif;
+    --shadow-button: 0px 2px 3px 0px #0000004d;
+    --gap: clamp(.3rem, 2.5vw, .5rem);
+    --size-small: clamp(.5rem, 2.5vw, .75rem);
+    --size-normal: clamp(.75rem, 2.5vw, 1rem);
+    --size-large: clamp(.8rem, 2.5vw, 1.4rem);
+    --size-extra-large: clamp(1rem, 5vw, 5rem);
+    --pad-x: clamp(.5rem, 2.5vw, .75rem);
+    --pad-y: clamp(.3rem, 2.5vw, .55rem);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+button,
+a {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+body {
+    overflow-x: hidden;
+}

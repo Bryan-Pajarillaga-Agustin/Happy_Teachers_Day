@@ -1,0 +1,61 @@
+.pictures {
+    width: 100vw;
+    height: 94vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-main-bg);
+}
+
+.pictures .wrapper {
+    width: 70%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3rem var(--light-text-color);
+    border-style: solid;
+    background-color: rgb(178, 176, 176);
+}
+
+.pictures .wrapper .image_wrapper {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pictures .wrapper .image_wrapper>div {
+    height: 90%;
+    width: 100%;
+    background-size: 50% auto;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all .3s;
+}
+
+.pictures .wrapper button {
+    padding: 0 5rem;
+    height: 100%;
+    border-radius: 2rem;
+    font-size: var(--size-extra-large);
+}
+
+.pictures .wrapper button:hover {
+    color: rgb(76, 76, 76);
+    background-color: rgb(208, 208, 208);
+}
+
+.pictures .wrapper button:nth-of-type(1) {
+    border-radius: 0 2rem 2rem 0;
+}
+
+.pictures .wrapper button:nth-of-type(2) {
+    border-radius: 2rem 0 0 2rem;
+}
+
+.pictures_dark_mode {
+    background-color: var(--dark-main-bg);
+}
