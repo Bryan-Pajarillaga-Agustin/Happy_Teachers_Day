@@ -17,7 +17,7 @@ function Nav() {
         <nav className={lightMode ? s.nav_light_mode : s.nav_dark_mode}>
             <div className={s.left}>
                 <div className={s.title_wrapper}>
-                    <img src="./public/icon.png" id={s.icon}/>
+                    <img src="icon.png" id={s.icon}/>
                     <h1 className={s.title}>
                         Happy Teachers' Day 🧡
                     </h1>
