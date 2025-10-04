@@ -13,7 +13,7 @@ function Letter() {
     return (
         <div className={lightMode ? `${s.letter} ${s.letter_light_mode}` : `${s.letter} ${s.letter_dark_mode}`}>
             <div className={showLetter ? s.show_letter : s.hide_letter}>
-                <h1>LOREM IPSUM DOLOR!</h1>
+                <h1>Happy Teachers' Day!!!</h1>
                 <p>Isang maligayang Teachers' Day Celebration babyyy kong Mahal na Mahal na Mahal ko Palagi!!!! 😘🧡🧡 <br />
                     Eto na yung letter na inaantay mo! 😂, de joke lang ✌, pero lahat ng mababasa mo dito ay pawang katotohanan lamang. 😘🧡
                 </p>
