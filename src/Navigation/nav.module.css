@@ -38,6 +38,10 @@ nav .left .title_wrapper>img {
     width: 3.5rem;
 }
 
+nav .left .title_wrapper>h1 {
+    font-size: var(--size-large);
+}
+
 nav .right .links {
     display: flex;
     align-items: center;
@@ -86,6 +90,7 @@ nav .right {
 
 nav .right .hamburger_button {
     display: none;
+    color: black;
 }
 
 nav .right .color_theme {
@@ -149,8 +154,51 @@ nav .right .dark_mode {
     animation: highlightTab .3s ease forwards;
 }
 
+.nav_dark_mode .right .links {
+    background-color: var(--dark-main-bg);
+}
+
+.nav_dark_mode .right .hamburger_button {
+    color: white;
+}
+
 @keyframes highlightTab {
     to {
         scale: 1;
+    }
+}
+
+@media screen and (max-width: 800px) and (max-height: 900px) {
+    nav .left {
+        margin-left: .5rem;
+    }
+    nav .right {
+        margin-right: .5rem;
+    }
+    nav .right .hamburger_button {
+        display: block;
+        background: none;
+    }
+    nav .right .links {
+        display: none;
+    }
+    nav .right .dropDown {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: 0;
+        width: 100vw;
+        background-color: white;
+        box-shadow: 0px 5px 9px -5px #0000004d;
+        font-family: var(--font-text);
+        position: absolute;
+        top: 4rem;
+        left: 0px;
+    }
+    nav .right .link {
+        width: 100%;
+        justify-content: center;
+        height: fit-content;
+        padding: var(--pad-y);
     }
 }

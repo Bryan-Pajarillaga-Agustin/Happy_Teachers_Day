@@ -1,10 +1,11 @@
-import { useContext } from 'react'
+import { useContext, useState } from 'react'
 import { Link } from "react-router-dom"
 import s from './nav.module.css'
 import { context } from '../App'
 
 function Nav() {
     const { tabs, setTabs, setPath, lightMode, setLightMode } = useContext(context)
+    const [showDropDown, setShowDropDown] = useState()
 
     function handleTab(path) {
         setTabs(prev => prev.map((tab) => {
@@ -25,7 +26,7 @@ function Nav() {
             </div>
 
             <div className={s.right}>
-                <div className={s.links}>
+                <div className={showDropDown ? `${s.links} ${s.dropDown}` : `${s.links}`}>
                     {tabs.map((tab) => {
                         return (
                             <Link
@@ -41,7 +42,7 @@ function Nav() {
                     })}
                 </div>
 
-                <button className={s.hamburger_button}> <i className="fa fa-bars"></i> </button>
+                <button className={s.hamburger_button} onClick={()=>{showDropDown ? setShowDropDown(false) : setShowDropDown(true)}}> <i className="fa fa-bars"></i> </button>
                 <button
                     className={lightMode ? `${s.color_theme} ${s.light_mode}` : `${s.color_theme} ${s.dark_mode}`}
                     onClick={() => { lightMode ? setLightMode(false) : setLightMode(true) }}>

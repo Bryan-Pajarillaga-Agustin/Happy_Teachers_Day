@@ -2,7 +2,7 @@
     width: 100vw;
     height: 92vh;
     background-image: url('../../../public/background.png');
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
     background-attachment: fixed;
     display: flex;
@@ -68,4 +68,10 @@
 
 .letter #hide_button {
     display: none;
+}
+
+@media screen and (max-width: 800px) and (max-height: 900px) {
+    .letter .show_letter {
+        width: 90vw;
+    }
 }
